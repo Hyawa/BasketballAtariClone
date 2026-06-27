@@ -1,0 +1,14 @@
+:root {
+  --color-bg: #000000;
+  --color-bg-secondary: #0a0a0a;
+  --color-primary: #39ff14;
+  --color-secondary: #ff8c00;
+  --color-accent: #00e5ff;
+  --color-text: #e0e0e0;
+  --color-error: #ff3b30;
+  --font-mono: "Courier New", Courier, monospace;
+  --border-width: 2px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+}

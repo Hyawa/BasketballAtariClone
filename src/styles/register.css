@@ -1,0 +1,12 @@
+.screen--register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.register__title {
+  text-align: center;
+  color: var(--color-secondary);
+  letter-spacing: 2px;
+}

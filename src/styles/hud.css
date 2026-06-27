@@ -1,0 +1,13 @@
+.hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  gap: var(--spacing-md);
+}
+
+.hud__score {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  letter-spacing: 1px;
+}

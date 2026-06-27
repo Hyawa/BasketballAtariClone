@@ -1,0 +1,31 @@
+.court__score-banner {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: rgba(0, 0, 0, 0.75);
+  border: var(--border-width) solid var(--color-primary);
+  text-align: center;
+  z-index: 5;
+}
+
+.court__score-banner--visible {
+  display: flex;
+}
+
+.court__score-banner-title {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.court__score-banner-score {
+  color: var(--color-accent);
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}

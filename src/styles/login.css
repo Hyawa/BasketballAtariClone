@@ -1,0 +1,12 @@
+.screen--login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login__logo {
+  text-align: center;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+}
