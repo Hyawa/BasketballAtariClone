@@ -53,7 +53,7 @@ export class MainMenuScreen implements Screen {
   private buildOptions(): ReadonlyArray<MenuOption> {
     return [
       { label: "Singleplayer", onClick: () => this.router.navigateTo("singleplayer") },
-      { label: "Multiplayer", onClick: () => console.log("[MainMenuScreen] Multiplayer clicado.") },
+      { label: "Multiplayer", onClick: () => this.router.navigateTo("multiplayerLobby") },
       { label: "Options", onClick: () => console.log("[MainMenuScreen] Options clicado.") },
       { label: "Profile", onClick: () => console.log("[MainMenuScreen] Profile clicado.") },
       { label: "Logout", onClick: () => this.handleLogout() },

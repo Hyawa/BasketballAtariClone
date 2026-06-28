@@ -1,0 +1,169 @@
+.friend-sidebar {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
+  background-color: var(--lobby-bg-panel);
+  border-left: 1px solid rgba(139, 92, 246, 0.3);
+  overflow-y: auto;
+}
+
+.friend-list__title,
+.friend-requests__title,
+.add-friend__title,
+.invites-panel__title {
+  color: var(--lobby-purple);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.friend-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: var(--lobby-border-radius);
+  background-color: rgba(255, 255, 255, 0.03);
+  margin-bottom: var(--spacing-sm);
+}
+
+.friend-card__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--lobby-blue);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.friend-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.friend-card__name {
+  font-size: 0.85rem;
+  color: var(--lobby-text);
+}
+
+.friend-card__status {
+  font-size: 0.7rem;
+  color: #4ade80;
+}
+
+.friend-card__actions {
+  display: flex;
+  gap: 4px;
+}
+
+.friend-card__action-btn {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid var(--lobby-text-muted);
+  background-color: transparent;
+  color: var(--lobby-text-muted);
+}
+
+.friend-card__action-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.friend-list__offline-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px var(--spacing-sm);
+  font-size: 0.8rem;
+  color: var(--lobby-text-muted);
+}
+
+.friend-request-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: var(--lobby-border-radius);
+  background-color: rgba(255, 255, 255, 0.03);
+  margin-bottom: var(--spacing-sm);
+}
+
+.friend-request-card__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--lobby-purple);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.friend-request-card__name {
+  flex: 1;
+  font-size: 0.85rem;
+}
+
+.friend-request-card__accept,
+.friend-request-card__reject {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.friend-request-card__accept {
+  background-color: var(--lobby-blue);
+  color: #ffffff;
+}
+
+.friend-request-card__reject {
+  background-color: transparent;
+  border: 1px solid var(--lobby-text-muted);
+  color: var(--lobby-text-muted);
+}
+
+.friend-requests__empty,
+.invites-panel__empty {
+  font-size: 0.8rem;
+  color: var(--lobby-text-muted);
+}
+
+.add-friend {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.add-friend__input {
+  padding: var(--spacing-sm);
+  background-color: var(--lobby-bg);
+  border: 1px solid var(--lobby-text-muted);
+  border-radius: var(--lobby-border-radius);
+  color: var(--lobby-text);
+}
+
+.add-friend__button {
+  padding: var(--spacing-sm);
+  border-radius: var(--lobby-border-radius);
+  border: 1px solid var(--lobby-gold);
+  background-color: transparent;
+  color: var(--lobby-gold);
+}
+
+.invites-panel__row {
+  font-size: 0.8rem;
+  padding: var(--spacing-sm);
+  border-radius: var(--lobby-border-radius);
+  background-color: rgba(212, 175, 55, 0.08);
+  margin-bottom: var(--spacing-sm);
+}

@@ -4,6 +4,7 @@ import { RegisterScreen } from "../screens/RegisterScreen";
 import { MainMenuScreen } from "../screens/MainMenuScreen";
 import { SinglePlayerScene } from "../scenes/SinglePlayerScene";
 import { AuthService } from "../api/AuthService";
+import { MultiplayerLobbyScene } from "../scenes/MultiplayerLobbyScene";
 
 
 export class App {
@@ -22,6 +23,7 @@ export class App {
     this.router.register("register", () => new RegisterScreen(this.router), false);
     this.router.register("menu", () => new MainMenuScreen(this.router), true);
     this.router.register("singleplayer", () => new SinglePlayerScene(this.router), true);
+    this.router.register("multiplayerLobby", () => new MultiplayerLobbyScene(this.router), true);
   }
 
   public start(): void {

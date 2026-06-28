@@ -8,6 +8,8 @@ import "./styles/menu.css";
 import "./styles/singleplayer.css";
 import "./styles/court.css";
 import "./styles/hud.css";
+import "./styles/lobby.css";
+import "./styles/lobby-sidebar.css";
 
 function bootstrap(): void {
   const rootElement = document.getElementById("app");

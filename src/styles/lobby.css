@@ -1,0 +1,144 @@
+.screen--multiplayer-lobby {
+  --lobby-bg: #0d0d1a;
+  --lobby-bg-panel: #15152b;
+  --lobby-blue: #3b82f6;
+  --lobby-purple: #8b5cf6;
+  --lobby-gold: #d4af37;
+  --lobby-text: #e6e6f0;
+  --lobby-text-muted: #9090a8;
+  --lobby-border-radius: 12px;
+
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--lobby-bg);
+  color: var(--lobby-text);
+  font-family: var(--font-mono);
+}
+
+.lobby-main {
+  flex: 0 0 80%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+.lobby-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lobby-header__title {
+  color: var(--lobby-gold);
+  letter-spacing: 2px;
+}
+
+/* Sobrescreve o componente Button (tema Atari) apenas dentro deste lobby.
+   Não altera ui/components/Button.ts nem outras telas. */
+.screen--multiplayer-lobby .btn {
+  border-color: var(--lobby-blue);
+  color: var(--lobby-blue);
+  border-radius: var(--lobby-border-radius);
+}
+
+.screen--multiplayer-lobby .btn:hover:not(:disabled) {
+  background-color: var(--lobby-blue);
+  color: #ffffff;
+}
+
+.screen--multiplayer-lobby .btn--secondary {
+  border-color: var(--lobby-purple);
+  color: var(--lobby-purple);
+}
+
+.screen--multiplayer-lobby .btn--secondary:hover:not(:disabled) {
+  background-color: var(--lobby-purple);
+  color: #ffffff;
+}
+
+.screen--multiplayer-lobby .btn--danger {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.screen--multiplayer-lobby .btn--danger:hover:not(:disabled) {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.queue-selector,
+.game-mode-selector {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.queue-selector__option,
+.game-mode-selector__option {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--lobby-text-muted);
+  border-radius: var(--lobby-border-radius);
+  background-color: var(--lobby-bg-panel);
+  color: var(--lobby-text-muted);
+  transition: all 0.15s;
+}
+
+.queue-selector__option--active,
+.game-mode-selector__option--active {
+  border-color: var(--lobby-blue);
+  color: var(--lobby-text);
+  background-color: rgba(59, 130, 246, 0.15);
+}
+
+.queue-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background-color: var(--lobby-bg-panel);
+  border-radius: var(--lobby-border-radius);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.queue-status__description {
+  color: var(--lobby-text-muted);
+  text-align: center;
+  max-width: 480px;
+}
+
+.queue-status__label {
+  display: none;
+  color: var(--lobby-blue);
+  letter-spacing: 1px;
+}
+
+.queue-status__label--visible {
+  display: block;
+}
+
+.queue-status__hidden {
+  display: none;
+}
+
+.queue-timer {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--lobby-gold);
+  letter-spacing: 2px;
+}
+
+.queue-timer--visible {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .screen--multiplayer-lobby {
+    flex-direction: column;
+  }
+
+  .lobby-main,
+  .friend-sidebar {
+    flex: 1 1 auto;
+  }
+}

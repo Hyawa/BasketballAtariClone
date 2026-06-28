@@ -1,3 +1,40 @@
+.court {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background-color: #003300;
+  border: var(--border-width) solid var(--color-primary);
+  overflow: hidden;
+}
+
+.court__center-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-primary);
+  opacity: 0.5;
+}
+
+.court__player {
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.court__ball {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.court__hoop {
+  position: absolute;
+  border: 3px solid var(--color-secondary);
+  border-top: none;
+  background-color: transparent;
+}
+
 .court__score-banner {
   position: absolute;
   top: 16px;

@@ -5,7 +5,7 @@ export interface Screen {
   unmount(): void;
 }
 
-export type ScreenName = "login" | "register" | "menu" | "singleplayer";
+export type ScreenName = "login" | "register" | "menu" | "singleplayer" | "multiplayerLobby";
 
 interface RouteDefinition {
   readonly factory: () => Screen;
